@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad práctica III - Eventos JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">ACTIVIDAD PRÁCTICA III</p>
+      <h1>Eventos con JavaScript</h1>
+      <p class="intro">Esta página demuestra cinco eventos diferentes de JavaScript.</p>
+    </header>
+
+    <section class="panel">
+      <h2>1. Evento <code>click</code></h2>
+      <p>Presiona el botón para cambiar el mensaje.</p>
+      <button id="botonClick" type="button">Presióname</button>
+      <p id="mensajeClick" class="result" aria-live="polite">Aquí aparecerá el resultado.</p>
+    </section>
+
+    <section class="panel">
+      <h2>2. Evento <code>mouseover</code></h2>
+      <p>Pasa el cursor por encima de la tarjeta.</p>
+      <div id="tarjeta" class="hover-card" tabindex="0">Pasa el cursor aquí</div>
+      <p id="mensajeMouse" class="result" aria-live="polite">Todavía no has pasado el cursor.</p>
+    </section>
+
+    <section class="panel">
+      <h2>3. Evento <code>input</code></h2>
+      <label for="nombre">Escribe tu nombre:</label>
+      <input id="nombre" type="text" placeholder="Tu nombre">
+      <p id="saludo" class="result" aria-live="polite">Tu saludo aparecerá aquí.</p>
+    </section>
+
+    <section class="panel">
+      <h2>4. Evento <code>change</code></h2>
+      <label for="color">Elige un color para el fondo:</label>
+      <select id="color">
+        <option value="">Selecciona una opción</option>
+        <option value="#e8f2ff">Azul claro</option>
+        <option value="#e8f8ee">Verde claro</option>
+        <option value="#fff1e6">Naranja claro</option>
+      </select>
+      <p id="mensajeColor" class="result" aria-live="polite">El color cambiará cuando elijas una opción.</p>
+    </section>
+
+    <section class="panel">
+      <h2>5. Evento <code>submit</code></h2>
+      <p>Completa el formulario y envíalo.</p>
+      <form id="formulario">
+        <label for="comentario">Comentario:</label>
+        <input id="comentario" name="comentario" type="text" placeholder="Escribe un comentario" required>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="resultadoFormulario" class="result" aria-live="polite">Tu comentario aparecerá aquí.</p>
+    </section>
+
+    <footer>Proyecto de práctica de HTML, CSS y JavaScript.</footer>
+  </main>
+</body>
+</html>
